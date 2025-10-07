@@ -33,12 +33,16 @@
 let name = "Umar";
 const age = 20;
 
+### 🔹 ФУНКЦИИ
+```js
 function hello(name) {
   console.log("Привет, " + name + "!");
 }
 
 hello("Умар");
 
+### 🔹 ЦИКЛЫ
+```js
 for (let i = 1; i <= 3; i++) {
   console.log("Число: " + i);
 }
