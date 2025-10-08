@@ -1,3 +1,5 @@
-let a=2
-
-console.log(a);
+var a=1
+while(a<100){
+    console.log(a);
+    a+=2
+}
