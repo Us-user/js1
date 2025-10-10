@@ -5,8 +5,8 @@
 // var a=40,b=50;
 // var c=a
 // a=b;
-// b=a
-// console.log(a,c);
+// b=c
+// console.log(a,b);
 
 
 // var a=100,b=180,c=140

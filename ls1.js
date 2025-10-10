@@ -1,5 +1,5 @@
-var a=1
-while(a<100){
-    console.log(a);
-    a+=2
-}
+console.log(
+    (function add(a,b){
+        return a+b
+    })(3,4)
+);
