@@ -104,7 +104,19 @@
 // console.log(qq(14,28));
 
 //task10
-//позже решу
+// function qq(a){
+//     for(let i=2;i<a;i++){
+//         var e=0
+//         for(let q=1;q<a;q+=i){
+//             e+=q;
+//         }
+//         if(e==a){
+//             return true
+//         }
+//     }
+//     return false
+// }
+// console.log(qq(1248));
 
 
 //task11
@@ -252,22 +264,22 @@
 
 
 //task8
-function qq(a,b){
-    var n=0
-    for(let i=a;i<=b;i++){
-        var p=0
-        for(let w=2;w<i;w++){
-            if(i%w==0){
-                p++
-            }
-        }
-        if(p==0){
-            n+=i
-        }
-    }
-    return n
-}
-console.log(qq(10,50));
+// function qq(a,b){
+//     var n=0
+//     for(let i=a;i<=b;i++){
+//         var p=0
+//         for(let w=2;w<i;w++){
+//             if(i%w==0){
+//                 p++
+//             }
+//         }
+//         if(p==0){
+//             n+=i
+//         }
+//     }
+//     return n
+// }
+// console.log(qq(10,50));
 
 //task9n
 
