@@ -157,7 +157,7 @@ console.log(a); //  не правильно — так как нет досту�
  -->
 
 
-### 🔁 РЕКУРСИЯ И 🔒 ЗАМЫКАНИЕ В JAVASCRIPT
+<!-- ### 🔁 РЕКУРСИЯ И 🔒 ЗАМЫКАНИЕ В JAVASCRIPT
 
 ## 🔁 РЕКУРСИЯ (Recursion)
 
@@ -193,4 +193,105 @@ function qq(){
 let ee=qq()
 console.log(ee());//1
 console.log(ee());//2
-console.log(ee());//3
+console.log(ee());//3 -->
+
+
+
+
+
+### Методы в JS для работы со String
+
+## 🧩 1. charAt() и at()
+Возвращают символ строки по указанному индексу (позиции).
+
+```javascript
+let text = "Hello";
+console.log(text.charAt(1)); // "e"
+console.log(text.at(-1));    // "o" — можно считать с конца
+```
+
+## 🧩 2. toString()
+Преобразует значение в строку.
+
+```javascript
+let num = 123;
+console.log(num.toString()); // "123"
+```
+
+## 🧩 3. concat()
+Объединяет (склеивает) две или больше строк.
+
+```javascript
+let a = "Hello";
+let b = "World";
+console.log(a.concat(" ", b)); // "Hello World"
+```
+
+## 🧩 4. trim()
+Удаляет пробелы в начале и конце строки.
+
+```javascript
+let text = "   Hello world !  ";
+console.log(text.trim()); // "Hello world!"
+```
+
+## 🧩 5. includes()
+Проверяет, содержит ли строка заданное слово. Возвращает true или false.
+
+```javascript
+let text = "JavaScript";
+console.log(text.includes("Java")); // true
+console.log(text.includes("Python")); // false
+```
+
+## 🧩 6. indexOf() и lastIndexOf()
+Возвращают индекс первого или последнего вхождения подстроки.
+
+```javascript
+let text = "banana";
+console.log(text.indexOf("a"));      // 1 (первое "a")
+console.log(text.lastIndexOf("a"));  // 5 (последнее "a")
+```
+
+## 🧩 7. replace() и replaceAll()
+Заменяют часть строки.
+
+
+```javascript
+let text = "I like apples";
+console.log(text.replace("apples", "bananas")); // "I like bananas"
+
+let t = "apple apple apple";
+console.log(t.replaceAll("apple", "banana"));   // "banana banana banana"
+```
+
+## 🧩 8. substring() и slice()
+Извлекают часть строки.
+
+```javascript
+let text = "JavaScript";
+console.log(text.substring(0, 4)); // "Java"
+console.log(text.slice(4, 10));    // "Script"
+
+console.log(text.slice(-6)); // "Script"
+
+```
+
+slice() также может использовать отрицательные индексы (считает с конца).
+
+## 🧩 9. split()
+Разделяет строку на массив по указанному разделителю.
+
+```javascript
+let text = "apple,banana,orange";
+console.log(text.split(",")); // ["apple", "banana", "orange"]
+```
+
+## 🧩 10. toLowerCase() и toUpperCase()
+Преобразуют строку с загдавными или прописными буквами
+
+```javascript
+let text = "Hello World";
+console.log(text.toLowerCase()); // "hello world"
+console.log(text.toUpperCase()); // "HELLO WORLD"
+```
