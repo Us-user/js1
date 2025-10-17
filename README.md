@@ -196,16 +196,6 @@ console.log(ee());//2
 console.log(ee());//3 -->
 
 
-# Существует 3 вида создания String
-### First:
-используя Double quotes
-
-### Second:
-используя Single quotes
-
-### Third:
-используя Backticks
-
 
 # Методы в JS для работы со String
 
