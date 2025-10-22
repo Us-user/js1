@@ -1,6 +1,6 @@
 //task1 -
 // function qq(...arr){
-//     return arr.join(",")
+//     return arr
 // }
 // console.log(qq([1,2],[3,4],[5,3,2,4]));
 
@@ -103,7 +103,7 @@
 // console.log(qq(["Halloween", "Thanksgiving", "Christmas"]));
 
 
-//task11 -
+// task11 -
 function qq(arr){
     for(let i=0;i<1;i++){
         return Math.sqrt(arr[i])==Math.pow(Math.sqrt(arr[i]),3)
