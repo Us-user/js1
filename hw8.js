@@ -1,8 +1,7 @@
 //task1 -
-// function qq(...arr){
-//     return arr
-// }
-// console.log(qq([1,2],[3,4],[5,3,2,4]));
+let qw= (...arr)=>{
+    return 
+}
 
 
 //task2 
@@ -104,12 +103,12 @@
 
 
 // task11 -
-function qq(arr){
-    for(let i=0;i<1;i++){
-        return Math.sqrt(arr[i])==Math.pow(Math.sqrt(arr[i]),3)
-    }
-}
-console.log(qq([4,8]));
+// function qq(arr){
+//     for(let i=0;i<1;i++){
+//         return Math.sqrt(arr[i])==Math.pow(Math.sqrt(arr[i]),3)
+//     }
+// }
+// console.log(qq([4,8]));
 
 
 //task12
@@ -154,3 +153,28 @@ console.log(qq([4,8]));
 //     })
 // }
 // console.log(qq(["A", 0, "Edabit", 1729, "Python", "1729"]));
+
+
+
+//task?
+// function qq(arr){
+//     let qw=0
+//     for(let i of arr){
+//         i==true ? ++qw: 0
+//     }
+//     return qw
+// }
+// console.log(qq([true,false,true,false]));
+
+
+//task?
+function qq(arr){
+    let q=0
+    for(let i=1;i<arr.length;i++){
+        if(arr[i-1]==arr[i+1] && arr[i]!=arr[i+1]){
+            q++
+        }
+    }
+    return q
+}
+console.log(qq([1,2,1,3,2,4,2,4,6,8,4,9,4]));
