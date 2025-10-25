@@ -176,16 +176,21 @@
 // console.log(qq({name: "John", age: 30}));
 
 
-//task2 -
+//task2 
 // function qq(obj,a){
 //     return obj[a]
 // }
 // console.log(qq({name: "Alice", age: 25},"age"));
 
 
-//task3 -
+//task3 
 // function qq(obj){
-//     return obj.toSorted
+//     let key=Object.keys(obj).sort()
+//     let obj2={}
+//     for(let i of key){
+//         obj2[i]=obj[i]
+//     }
+//     return obj2
 // }
 // console.log(qq({b: 2, a: 1, c: 3}));
 
@@ -199,19 +204,23 @@
 
 
 //task5
+// function obj(arr){
+//     let obj2={}
+//     for(let i in arr){
+//         obj2[i.toUpperCase()]=arr[i]
+//     }
+//     return obj2
+// }
+// console.log(obj({name: "Alice", age: 25}));
 
 
 
 //PART3
-//task1-
+//task1
 // function qq(obj){
-//     let q=Object.entries(obj)
-//     let w=q.join("")
 //     let qw=[]
-//     for(let i of w){
-//         if(typeof i=="number"){
-//             qw+=i
-//         }
+//     for(let i in obj){
+//         qw.push(obj[i])
 //     }
 //     return qw
 // }
@@ -219,15 +228,117 @@
 
 
 //task2
-// function qq(arr,arr2){-
-//     let q=Object.entries(arr)
-//     let w=Object.entries(arr2)
-//     let qq=q[0].concat(q[1])
-//     let ww=w[0].concat(w[1])
-//     for(let i=0;i<)
+// function qq(obj1,obj2){
+//     let arr1=Object.entries(obj1)
+//     let arr2=Object.entries(obj2)
+//     for(let i=0;i<arr1.length;i++){
+//         if(arr1[i][0]!==arr2[i][0] || arr1[i][1]!==arr2[i][1])
+//             return false
+//     }
+//     return true
 // }
-// console.log(qq({a: 1, b:2}, {a:1, b:2}));
+// console.log(qq({a:1, b:2}, {a:1, b:"2"}));
 
 
-//task3
-function qq()
+//task3 
+// function qq(a){
+//     let res=a.replaceAll(" ","").replaceAll(/[^a-zA-Z0-9]/g, "")
+//     let b=0,c=0
+//     for(let i of res){
+//         if(isNaN(i)==false){
+//             c++
+//         }
+//         else{
+//             b++
+//         }
+//     }
+//     let qw=[["letters",`${b}`],["numbers",`${c}`]]
+//     return Object.fromEntries(qw)
+// }
+// console.log(qq("Hello, World"));
+
+
+//task4
+function qq(obj){
+    let obj2={}
+    for(let i in obj){
+        obj2[obj[i]]=i
+    }
+    return obj2
+}
+console.log(qq({a:1, b:2}));
+
+
+//task5
+// function qq(arr){
+//     let q=arr[0],w=arr[1]
+//     let {age:age1}=q
+//     let {age:age2}=w
+//     return age1>age2 ? q:w
+// }
+// console.log(qq([{name:"John", age:52},{name: "Johnson", age: 39}]));
+
+
+//task6
+// function qq(obj){
+//     let qw=Object.values(obj)
+//     return qw.includes("undifned")
+// }
+// console.log(qq({name: "undifne", age: 11}));
+
+
+//task9
+// function qq(person){
+//     let {year:qw}=person
+//     person.age=2024-qw
+//     person.start=1992+7
+//     person.end=1992+7+11
+//     return person
+// }
+// console.log(qq({name: "John", year: 1992}));
+
+
+//task10
+// function qq(obj){
+//     let qq=Object.values(obj)
+//     let cnt=0
+//     for(let i of qq){
+//         if(typeof i=="number"){
+//             cnt+=i
+//         }
+//     }
+//     return cnt
+// }
+// console.log(qq({a: "dsadsa", b: 123, c: 345,qww:32}));
+
+
+//task11
+// function qq(obj){
+//     let cnt=0
+//     for(let i in obj){
+//         cnt++
+//     }
+//     return cnt
+// }
+// console.log(qq({a: "dsadsa", b: 123,}));
+
+
+//task12
+//also11
+
+
+//task13
+// function qq(obj){
+//     let qq=Object.values(obj)
+//     let qw=""
+//     for(let i of qq){
+//         if(isNaN(i)==true){
+//             qw+=i
+//         }
+//     }
+//     return qw
+// }
+// console.log(qq({a: "dsadsa", b: 123, c: "abc"}));
+
+
+//task14
