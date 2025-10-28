@@ -259,14 +259,14 @@
 
 
 //task4
-function qq(obj){
-    let obj2={}
-    for(let i in obj){
-        obj2[obj[i]]=i
-    }
-    return obj2
-}
-console.log(qq({a:1, b:2}));
+// function qq(obj){
+//     let obj2={}
+//     for(let i in obj){
+//         obj2[obj[i]]=i
+//     }
+//     return obj2
+// }
+// console.log(qq({a:1, b:2}));
 
 
 //task5
@@ -285,6 +285,16 @@ console.log(qq({a:1, b:2}));
 //     return qw.includes("undifned")
 // }
 // console.log(qq({name: "undifne", age: 11}));
+
+//task7
+// function qq(obj){
+//     for(let i in obj)
+//         if(typeof obj[i]=="object"){
+//             return true
+//         }
+//     return false
+// }
+// console.log(qq({name: "John", age: 1}));
 
 
 //task9
@@ -341,4 +351,35 @@ console.log(qq({a:1, b:2}));
 // console.log(qq({a: "dsadsa", b: 123, c: "abc"}));
 
 
+//task15
+// const fuc=(obj)=>{
+//     return Object.fromEntries(
+//         Object.entries(obj).filter((elem)=>{
+//             let res=elem[1]
+//             if(res.replaceAll(/[a-zA-Z]/g,"").length != res.length &&
+//             res.replaceAll(/[0-9]/g,"").length != res.length){
+//                 return elem
+//             }
+//         })
+//     )
+
+// }
+// console.log(fuc({a: "dsadsa", b: "abc11", c: "abc"}));
+
+
 //task14
+function qq(obj1,obj2){
+    let arr1=Object.keys(obj1)
+    let arr2=Object.keys(obj2)
+    let obj11={},obj22={}
+    for(let i=0;i<Math.min(arr1.length,arr2.length);i++){{
+        obj11[arr2[i]]=obj1[arr1[i]]
+    }}
+    for(let i=0;i<Math.min(arr1.length,arr2.length);i++){{
+        obj22[arr1[i]]=obj2[arr2[i]]
+    }}
+    return {obj11, obj22}
+    
+                
+}
+console.log(qq({a: 1, b: 2,}, {c: 3, d:4}));
