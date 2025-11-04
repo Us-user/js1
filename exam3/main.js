@@ -114,21 +114,21 @@
 
 
 //task8
-// function combine(obj1,obj2){
-//     let com={...obj1}
-//     let qw=Object.keys(obj2)
-//     let qw2=Object.keys(obj1)
-//     for(let i in obj2){
-//         if(qw.includes(i)){
-//             com[i]=obj2[i]
-//         }
-//         if(qw2.includes(i)==false){
-//             com[i]=obj2[i]
-//         }
-//     }
-//     return com
-// }
-// console.log(combine({ a: 1, b: 2, c: 3 },{ b: 4, d: 5, e: 6 }));
+function combine(obj1,obj2){
+    let com={...obj1}
+    let qw=Object.keys(obj2)
+    let qw2=Object.keys(obj1)
+    for(let i in obj2){
+        if(qw.includes(i)){
+            com[i]=obj2[i]
+        }
+        if(qw2.includes(i)==false){
+            com[i]=obj2[i]
+        }
+    }
+    return com
+}
+console.log(combine({ a: 1, b: 2, c: 3 },{ b: 4, d: 5, e: 6 }));
 
 
 
